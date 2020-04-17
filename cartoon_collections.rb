@@ -16,4 +16,8 @@ def find_the_cheese(food)
   result = food.any? { |yum| types_of_cheese.include? (yum) }
   
   if result == TRUE
-    food.find { |yum| types_of_cheese.include? yum }
+    food.find { |yum| yum || "cheddar" || "gouda" || "camembert" }
+  else
+    puts "No cheese :("
+  end
+end
