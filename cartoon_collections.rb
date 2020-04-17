@@ -13,11 +13,6 @@ end
 def find_the_cheese(food)
   types_of_cheese = ["cheddar", "gouda", "camembert"]
   
-  food.include?
-  if result == TRUE
-    food.find { |cheese| cheese == types_of_cheese }
-  else
-    puts "No cheese here :("
-  end
+  food.include?("cheddar", "gouda", "camembert")
   
 end
