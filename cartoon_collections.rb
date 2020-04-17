@@ -16,3 +16,13 @@ def find_the_cheese(food)
   food.include?("cheddar", "gouda", "camembert")
   
 end
+
+#testing 
+
+soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
+
+def find_the_cheese(food)
+  food.include?("cheddar", "gouda", "camembert")
+end
+
+find_the_cheese(soup)
