@@ -9,10 +9,10 @@ end
 def long_planeteer_calls(longcall)
   longcall.find do |word|
    
-    if word.count > 4
-      TRUE
+    if word.size > 4
+      longcall = TRUE
     else
-      FALSE
+      longcall = FALSE
     end
     
   end
