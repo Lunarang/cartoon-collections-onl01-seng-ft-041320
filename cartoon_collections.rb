@@ -22,7 +22,7 @@ end
 soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
 
 def find_the_cheese(food)
-  food.include?("cheddar", "gouda", "camembert")
+  food.any? { |cheese| cheese == ("cheddar", "gouda", "camembert")}
 end
 
 find_the_cheese(soup)
