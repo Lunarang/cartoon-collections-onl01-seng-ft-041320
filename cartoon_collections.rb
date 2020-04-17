@@ -6,8 +6,13 @@ def summon_captain_planet(calls)
   calls.map { |word| word.capitalize + "!" }
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(longcall)
+  longcall.find do |word|
+    if word.size > 4
+      TRUE
+    else
+      FALSE
+    end
 end
 
 def find_the_cheese# code an argument here
