@@ -16,13 +16,3 @@ def find_the_cheese(food)
   food.any?("cheddar", "gouda", "camembert")
   
 end
-
-#testing 
-
-soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
-
-def find_the_cheese(food)
-  food.any? { |cheese| cheese == ("cheddar", "gouda", "camembert")}
-end
-
-find_the_cheese(soup)
