@@ -3,8 +3,7 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(calls)
-  calls.map { |word| "#{word.capitalize}" + "!" }
-  calls
+  calls.split.map { |word| "#{word.capitalize}!" }.join(" ")
 end
 
 def long_planeteer_calls# code an argument here
