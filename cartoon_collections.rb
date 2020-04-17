@@ -11,7 +11,8 @@ def long_planeteer_calls(longcall)
 end
 
 def find_the_cheese(food)
-  result = food.include? ("cheddar", "gouda", "camembert")
+  types_of_cheese = ["cheddar", "gouda", "camembert"]
+  result = food.include? (types_of_cheese)
   
   if result == TRUE
     food.find { |cheese| cheese == ("cheddar", "gouda", "camembert") }
