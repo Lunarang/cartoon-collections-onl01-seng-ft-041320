@@ -13,6 +13,7 @@ end
 def find_the_cheese(food)
   types_of_cheese = ["cheddar", "gouda", "camembert"]
   
-  food.any?("cheddar", "gouda", "camembert")
+  result = food.any? { |yum| types_of_cheese.include? (yum) }
   
-end
+  if result == TRUE
+    food.find { |yum| types_of_cheese.include? yum }
