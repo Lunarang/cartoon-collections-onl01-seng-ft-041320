@@ -12,10 +12,11 @@ end
 
 def find_the_cheese(food)
   types_of_cheese = ["cheddar", "gouda", "camembert"]
-  result = food.include? (types_of_cheese)
+  
+  result = food.any? { |cheese| cheese == types_of_cheese}
   
   if result == TRUE
-    food.find { |cheese| cheese == ("cheddar", "gouda", "camembert") }
+    food.find { |cheese| cheese == types_of_cheese }
   else
     puts "No cheese here :("
   end
