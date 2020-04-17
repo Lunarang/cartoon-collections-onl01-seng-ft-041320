@@ -7,7 +7,7 @@ def summon_captain_planet(calls)
 end
 
 def long_planeteer_calls(longcall)
-  longcall.find do |word|
+  longcall.any? do |word|
    
     if word.size > 4
       longcall = TRUE
